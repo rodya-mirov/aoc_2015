@@ -3,6 +3,7 @@ use std::env;
 mod day01;
 mod day02;
 mod day03;
+mod day04;
 
 mod lib;
 
@@ -25,6 +26,9 @@ fn main() {
 
         "3a" => day03::run_3a().to_string(),
         "3b" => day03::run_3b().to_string(),
+
+        "4a" => day04::run_4a().to_string(),
+        "4b" => day04::run_4b().to_string(),
 
         other => {
             format!("Unrecognized problem number {}", other)
