@@ -1,6 +1,7 @@
 use std::env;
 
 mod day01;
+mod day02;
 
 mod lib;
 
@@ -17,6 +18,9 @@ fn main() {
     let out: String = match args.get(1).unwrap().as_str() {
         "1a" => day01::run_1a().to_string(),
         "1b" => day01::run_1b().to_string(),
+
+        "2a" => day02::run_2a().to_string(),
+        "2b" => day02::run_2b().to_string(),
 
         other => {
             format!("Unrecognized problem number {}", other)

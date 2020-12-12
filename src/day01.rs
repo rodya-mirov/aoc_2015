@@ -7,7 +7,7 @@ fn run_1a_with_input(input: &str) -> i32 {
         match c {
             '(' => total += 1,
             ')' => total -= 1,
-            o => panic!("Unknown char {}", o)
+            o => panic!("Unknown char {}", o),
         }
     }
 
@@ -25,11 +25,11 @@ fn run_1b_with_input(input: &str) -> usize {
         match c {
             '(' => total += 1,
             ')' => total -= 1,
-            o => panic!("Unknown char {}", o)
+            o => panic!("Unknown char {}", o),
         }
 
         if total == -1 {
-            return i+1;
+            return i + 1;
         }
     }
 
